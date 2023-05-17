@@ -1,0 +1,95 @@
+  <!DOCTYPE html>
+  <html lang="es">
+  <head>
+  <meta charset="utf-8" />
+  <title>Registro - iDESWEB</title>
+  <style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  h1, h2 {
+    font-family: Georgia, serif;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  fieldset {
+    margin: 1em auto;
+  }
+
+  legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  label {
+    font-weight: bold;
+    display: block;
+  }
+
+  #boton-crear {
+    font-size: 2em;
+    padding: 0.5em;
+  }
+
+  .inline {
+    display: inline;
+  }
+
+  .centrado {
+    text-align: center;
+  }
+  </style>
+  </head>
+  <body>
+  <header>
+  <h1>Administración paquetería</h1>
+
+  <h2>REGISTRO DE UN PAQUETE</h2>
+  </header>
+
+  <form action="" method="post">
+  <fieldset>
+  <legend>DATOS DEL PAQUETE</legend>
+  <p>
+  <label for="codRastreo">Código de rastreo</label>
+  <input type="text" name="codRastreo" id="codRastreo" />
+
+  <label for="idPaquete">ID del paquete</label>
+  <input type="text" name="idPaquete" id="idPaquete" />
+
+  <label for="numPieza">Número de piezas</label>
+  <input type="text" name="numPieza" id="numPieza" />
+
+  <label for="fechaHora">Fecha y Hora</label>
+  <input type="text" name="fechaHora" id="fechaHora" />
+
+  <label for="areaServicio">Área del servicio</label>
+  <input type="text" name="areaServicio" id="areaServicio" />
+  </p>
+
+  <label for="estadoActual">Estado actual</label>
+  <input type="text" name="estadoActual" id="estadoActual" />
+  </p>
+
+  <div style="text-align:center;">
+  <table id="estados-table"> </table>
+  </div>
+
+  <p class="centrado">
+  <input type="submit" value="Crear Paquete" id="boton-crear" />
+  </p>
+
+  </form>
+  </body>
+  </html>
