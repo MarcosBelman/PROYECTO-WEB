@@ -1,0 +1,94 @@
+  <!DOCTYPE html>
+  <html lang="es">
+  <head>
+
+    <link href = "assets/datatables/datatables.min.js">
+    <link href = "assets/datatables/datatables.min.css" rel="stylesheet">
+    
+
+  <meta charset="utf-8" />
+  <title>Registro - iDESWEB</title>
+  <style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  h1, h2 {
+    font-family: Georgia, serif;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  fieldset {
+    margin: 1em auto;
+  }
+
+  legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  label {
+    font-weight: bold;
+    display: block;
+  }
+
+  #boton-crear {
+    font-size: 2em;
+    padding: 0.5em;
+  }
+
+  .inline {
+    display: inline;
+  }
+
+  .centrado {
+    text-align: center;
+  }
+  </style>
+  </head>
+  <body>
+      <header>
+        <h1>Administración paquetería</h1>
+
+        <h2>REGISTRO DE UN PAQUETE</h2>
+      </header>
+
+      <form action="" method="post">
+      <fieldset>
+      <legend>DATOS DEL PAQUETE</legend>
+      <p>
+
+      <label for="idPaquete">Código de Rastreo</label>
+      <input type="text" name="codRastreo" id="codRastreo" />
+
+      <div style="text-align:center;">
+      <table id="estados-table"> </table>
+      </div>
+
+      <p class="centrado">
+        <button type="button" id="btnEstados">Seguir Envío</button>
+    </p>
+
+    <a href="Formulario2.html"><input type="button" value="Menú de paquetería"></a>
+
+      </form>
+
+    <script src = "assets/datatables/jQuery-3.6.0/jquery-3.6.0.min.js"> </script>
+    <script src = "assets/datatables/datatables.min.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src = "assets/scripts/conexion.js"> </script>
+    <script src = "assets/scripts/Estados.js"> </script>
+    
+  
+  </body>
+  </html>

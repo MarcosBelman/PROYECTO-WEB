@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href = "assets/datatables/datatables.min.js">
+    <link href = "assets/datatables/datatables.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <form action="" method="post">
+        <fieldset>
+        <legend>DATOS DEL PAQUETE</legend>
+        <p>
+        <label for="codRastreo">Código de rastreo</label>
+        <input type="text" name="codRastreo" id="codRastreo" />
+  
+        <label for="idPaquete">ID del paquete</label>
+        <input type="text" name="idPaquete" id="idPaquete" />
+  
+        <label for="numPieza">Número de piezas</label>
+        <input type="text" name="numPieza" id="numPieza" />
+  
+        <label for="areaServicio">Área del servicio</label>
+        <input type="text" name="areaServicio" id="areaServicio" />
+        </p>
+  
+        <label for="estadoActual">Estado actual</label>
+        <input type="text" name="estadoActual" id="estadoActual" />
+        </p>
+  
+        <div style="text-align:center;">
+        <table id="estados-table"> </table>
+        </div>
+  
+        <p class="centrado">
+            <button type="button" id="btnMostrar">Guardar</button>
+        </p>
+
+        <p class="centrado">
+            <button type="button" id="btnEliminar">Eliminar</button>
+        </p>
+        <p class="centrado">
+            <button type="button" id="btnModificar">Modificar</button>
+        </p>
+
+        <a href="Formulario.html"><input type="button" value="Estados del paquete"></a>
+        
+        </form>
+
+    <script src = "assets/datatables/jQuery-3.6.0/jquery-3.6.0.min.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src = "assets/scripts/conexion.js"> </script>
+    <script src = "assets/scripts/mostrarContenido.js"> </script>
+   
+</body>
+</html>
