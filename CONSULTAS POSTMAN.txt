@@ -1,0 +1,99 @@
+--INSERTAR PRIMER REGISTRO (POST)
+{
+    "codRastreo": 6040572731,
+    "idPaquete": "JD014600010569788721",
+    "numPieza": 1,
+    "areaServicio": "MEXICO CITY - MEXICO",
+    "estadoActual": "Envío retirado-recolectado."
+}
+
+--ACTUALIZAR REGISTRO (PUT)
+{
+    "idPaquete": "JD014600010569788721",
+    "numPieza": 1,
+    "areaServicio": "MEXICO CITY - MEXICO",
+    "estadoActual": "Envío ha salido de una estación DHL. MEXICO CITY - MEXICO"
+}
+
+{
+    "idPaquete": "JD014600010569788721",
+    "numPieza": 1,
+    "areaServicio": "MEXICO CITY - MEXICO",
+    "estadoActual": "Procesado en MEXICO CITY HUB - MEXICO"
+}
+
+{
+    "idPaquete": "JD014600010569788721",
+    "numPieza": 1,
+    "areaServicio": "MEXICO CITY - MEXICO",
+    "estadoActual": "Envío ha salido de una estación DHL. MEXICO CITY HUB - MEXICO"
+}
+
+{
+    "idPaquete": "JD014600010569788721",
+    "numPieza": 1,
+    "areaServicio": "HANGARES - MEXICO",
+    "estadoActual": "Envío arribado a una estación DHL. HANGARES - MEXICO"
+}
+
+{
+    "idPaquete": "JD014600010569788721",
+    "numPieza": 1,
+    "areaServicio": "HANGARES - MEXICO",
+    "estadoActual": "Procesado en HANGARES - MEXICO"
+}
+
+{
+    "idPaquete": "JD014600010569788721",
+    "numPieza": 1,
+    "areaServicio": "HANGARES - MEXICO",
+    "estadoActual": "Envío ha salido de una estación DHL. HANGARES - MEXICO"
+}
+
+{
+    "idPaquete": "JD014600010569788721",
+    "numPieza": 1,
+    "areaServicio": "MINATITLAN - MEXICO",
+    "estadoActual": "Envío arribado a una estación DHL. MINATITLAN - MEXICO"
+}
+
+{
+    "idPaquete": "JD014600010569788721",
+    "numPieza": 1,
+    "areaServicio": "MINATITLAN - MEXICO",
+    "estadoActual": "Envío en ruta con un mensajero para su entrega."
+}
+
+{
+    "idPaquete": "JD014600010569788721",
+    "numPieza": 1,
+    "areaServicio": "MINATITLAN - MEXICO",
+    "estadoActual": "Envío entregado."
+}
+
+CONSULTAR TODOS LOS MOVIMIENTOS DE UN PAQUETE (GET)
+http://localhost:5178/paqueteria/estadosPaquete
+
+
+CONSULTAR PAGINACION
+http://localhost:5178/paqueteria/estadosPaquete/historialEstados?page=1&codRastreo=6040572731
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--INSERTAR PRIMER REGISTRO (POST)
+{
+    "codRastreo": 1234567890,
+    "idPaquete": "GOBM990425",
+    "numPieza": 2,
+    "areaServicio": "MINATITLAN - VERACRUZ",
+    "estadoActual": "Envío Recolectado"
+}
+
+--ACTUALIZAR REGISTRO (PUT)
+{
+    "codRastreo": 1234567890,
+    "idPaquete": "GOBM990425",
+    "numPieza": 2,
+    "areaServicio": "MINATITLAN - VERACRUZ",
+    "estadoActual": "Envío Recolectado"
+}
+
